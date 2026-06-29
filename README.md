@@ -2,11 +2,6 @@
 
 An NLP-based tool that matches patient profiles to clinical trials using a combination of **hard eligibility filters** (age, sex, diagnosis) and **semantic similarity via sentence embeddings** (transformer-based) on the fuzzier eligibility criteria — with full explainability for every match.
 
-**Live demo:** *(add your Streamlit Cloud link here after deploying)*
-**Screenshot:**
-
-*(add a screenshot here — run the app locally, take a screenshot, save it as `screenshot.png` in this folder, then add: `![App screenshot](screenshot.png)`)*
-
 ---
 
 ## ⚠️ Important: read this first
@@ -37,7 +32,7 @@ Clinical trial recruitment is one of the biggest bottlenecks in medical research
 
 **Trials:** All 15 trials in `data/trials.py` are real studies from [ClinicalTrials.gov](https://clinicaltrials.gov), identified by their actual NCT ID, covering three conditions: Multiple Sclerosis, HER2-positive Breast Cancer, and Non-Small Cell Lung Cancer (NSCLC). Eligibility criteria are taken from each trial's real published record, condensed into structured fields for this project.
 
-One honest note on sourcing: ClinicalTrials.gov's bulk API (`api/v2/studies`) returned errors from this build environment, so trials were sourced individually by searching and reading each study's public page rather than via a single bulk pull. This is a reasonable real-world fallback and worth mentioning if asked — API access isn't always reliable, and being able to source data manually when needed is itself a useful skill.
+One note on sourcing: ClinicalTrials.gov's bulk API (`api/v2/studies`) returned errors from this build environment, so trials were sourced individually by searching and reading each study's public page rather than via a single bulk pull.
 
 **Patients:** All 20 patient profiles in `data/patients.py` are synthetic/invented, designed to span a realistic range of ages, diagnoses, stages, and biomarker statuses relevant to the trials in the dataset (including some patients who deliberately *shouldn't* match certain trials, to test the hard-filter logic).
 

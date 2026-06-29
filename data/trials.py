@@ -12,8 +12,7 @@ published eligibility sections, not invented.
 
 Note: ClinicalTrials.gov's bulk API (api/v2/studies) was not reachable from
 this build environment, so trials were sourced individually by searching
-and reading each study's public page. This is documented here for
-transparency -- a good thing to mention if asked about data sourcing.
+and reading each study's public page.
 
 Covers three conditions to give the matcher meaningful variety:
 - Multiple Sclerosis (relapsing forms)

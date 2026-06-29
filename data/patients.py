@@ -4,8 +4,7 @@ Synthetic patient profiles for the AI-Powered Clinical Trial Matching System.
 These are entirely fictional, invented for this project. Using synthetic
 data instead of real patient records is the correct and necessary choice
 here -- real patient data is protected health information (PHI) and using
-it would raise serious privacy and compliance issues. This is worth stating
-explicitly in interviews as a deliberate design decision, not an oversight.
+it would raise serious privacy and compliance issues.
 
 Each profile mirrors the kind of structured fields a clinical research
 coordinator would actually have on hand: demographics, diagnosis, disease
